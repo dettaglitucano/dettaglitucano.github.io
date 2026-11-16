@@ -64,14 +64,14 @@
   .btn-ghost:hover{background:rgba(236,212,138,.1)}
   .btn svg{width:18px;height:18px}
   .nav .btn{padding:11px 20px;font-size:.76rem}
-  .menu-toggle{display:none;background:none;border:0;color:var(--gold-light);cursor:pointer}
+  .menu-toggle{display:none;background:none;border:0;color:var(--gold-light);cursor:pointer;padding:8px;margin-right:-8px;line-height:0}
   .menu-toggle svg{width:30px;height:30px}
 
   /* ---------- Hero ---------- */
   .hero{position:relative;min-height:100vh;display:flex;align-items:center;background:#f3efe4;color:var(--ink);overflow:hidden;padding:130px 0 90px}
-  .hero::before{content:"";position:absolute;inset:0 40% 0 0;background:url(assets/relevo.svg) left center/900px auto no-repeat;pointer-events:none}
+  .hero::before{content:"";position:absolute;inset:0;background:url(assets/relevo.svg) 0 0/900px 900px repeat;-webkit-mask-image:linear-gradient(90deg,#000 30%,transparent 62%);mask-image:linear-gradient(90deg,#000 30%,transparent 62%);pointer-events:none}
   .hero-foto{position:absolute;top:0;right:0;bottom:0;width:56%;clip-path:polygon(30% 0,100% 0,100% 100%,0 100%)}
-  .hero-foto img{width:100%;height:100%;object-fit:cover;object-position:18% 50%}
+  .hero-foto img{width:100%;height:100%;object-fit:cover;object-position:62% 50%}
   .hero-grid{position:relative;z-index:1}
   .hero-txt{max-width:560px}
   .eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.76rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-light);font-weight:500;margin-bottom:26px}
@@ -86,7 +86,7 @@
   .btn-reto:hover{background:var(--olive-deep)}
   .btn-reto svg{width:34px;height:12px;transition:transform .25s}
   .btn-reto:hover svg{transform:translateX(5px)}
-  .link-seta{font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--olive-dark);border-bottom:1px solid currentColor;padding-bottom:4px}
+  .link-seta{font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--olive-dark);border-bottom:1px solid currentColor;padding:12px 0 4px}
   .link-seta:hover{color:var(--olive-deep)}
   /* Cabeçalho sobre o fundo claro (antes de rolar) */
   @media (min-width:821px){
@@ -210,6 +210,7 @@
   .foot{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
   .foot img{height:52px;width:auto}
   .foot-links{display:flex;gap:22px}
+  .foot-links a{padding:10px 0;display:inline-block}
   .foot-links a:hover{color:var(--gold-light)}
   .foot-bottom{border-top:1px solid rgba(236,212,138,.15);margin-top:30px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.78rem}
   .foot-bottom a{color:var(--gold-light)}
@@ -229,9 +230,9 @@
   @media (max-width:960px){
     .hero-grid,.equipe-grid{grid-template-columns:1fr;gap:50px}
     .hero{flex-direction:column;align-items:stretch;min-height:0;padding:62px 0 70px}
-    .hero::before{inset:40% 0 0 0;background-size:700px auto}
+    .hero::before{inset:0;background-size:700px 700px;-webkit-mask-image:linear-gradient(180deg,transparent 40%,#000 60%);mask-image:linear-gradient(180deg,transparent 40%,#000 60%)}
     .hero-foto{position:relative;width:100%;height:min(52vh,460px);clip-path:polygon(0 0,100% 0,100% 84%,0 100%)}
-    .hero-foto img{object-position:30% 50%}
+    .hero-foto img{object-position:60% 45%}
     .hero-grid{margin-top:34px}
     .hero .eyebrow{font-size:.66rem;letter-spacing:.16em;margin-bottom:24px}
     .hero .eyebrow::before{width:28px}
@@ -242,7 +243,12 @@
   @media (max-width:820px){
     .nav-links,.nav .btn{display:none}
     .menu-toggle{display:block}
-    .nav-links.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:center;gap:22px;padding:30px 0;background:rgba(63,66,36,.98)}
+    .nav-links.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:center;gap:6px;padding:18px 0 24px;background:rgba(63,66,36,.98)}
+    .nav-links.open a{display:block;padding:12px 24px}
+    .nav-links a::after{display:none}
+    .wa-float{width:54px;height:54px;right:16px;bottom:16px}
+    .wa-float svg{width:28px;height:28px}
+    .foot-links{flex-wrap:wrap;gap:4px 22px}
     header{background:rgba(63,66,36,.94);padding:12px 0}
     .nav-logo img{height:38px}
     section{padding:80px 0}
@@ -273,7 +279,7 @@
 <!-- ============ HERO ============ -->
 <section class="hero" id="inicio">
   <div class="hero-foto">
-    <img src="assets/hero-escritorio.jpg" alt="Estação de trabalho com projeto arquitetônico em 3D na tela do computador" width="1800" height="1200" fetchpriority="high">
+    <img src="assets/hero-projeto.jpg" alt="Plantas arquitetônicas sobre a mesa com lapiseira, compasso, transferidor e maquete" width="1800" height="1200" fetchpriority="high">
   </div>
   <div class="wrap hero-grid">
     <div class="hero-txt reveal">
