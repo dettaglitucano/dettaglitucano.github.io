@@ -24,7 +24,6 @@
     --muted:#6b6c5a;
     --gold:#c9a44c;
     --gold-light:#ecd48a;
-    --gold-grad:linear-gradient(135deg,#a8802e 0%,#e9cf7f 45%,#c79d3f 70%,#f3dd96 100%);
     --radius:18px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -44,8 +43,8 @@
   .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--gold-light);transition:width .3s}
   .nav-links a:hover::after{width:100%}
   .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;border-radius:999px;font-weight:600;font-size:.86rem;letter-spacing:.08em;text-transform:uppercase;transition:transform .25s,box-shadow .25s,background .25s;cursor:pointer;border:0}
-  .btn-gold{background:var(--gold-grad);color:var(--olive-deep);box-shadow:0 10px 26px rgba(201,164,76,.35)}
-  .btn-gold:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(201,164,76,.5)}
+  .btn-gold{background:#f3eedc;color:var(--olive-deep)}
+  .btn-gold:hover{background:var(--gold-light)}
   .btn-ghost{border:1px solid rgba(236,212,138,.6);color:var(--gold-light)}
   .btn-ghost:hover{background:rgba(236,212,138,.1)}
   .btn svg{width:18px;height:18px}
@@ -66,7 +65,7 @@
   .eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.76rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-light);font-weight:500;margin-bottom:26px}
   .eyebrow::before{content:"";width:40px;height:1px;background:var(--gold-light)}
   .hero h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(2.6rem,5.4vw,4.4rem);line-height:1.08;margin-bottom:26px}
-  .hero h1 em{font-style:italic;background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero h1 em{font-style:italic;color:var(--gold-light)}
   .hero p{font-size:1.08rem;font-weight:300;max-width:520px;color:#e4dfca;margin-bottom:40px}
   .hero-ctas{display:flex;gap:16px;flex-wrap:wrap}
   .hero-logo{position:relative;padding:40px}
@@ -90,7 +89,7 @@
   .servicos{background:var(--paper)}
   .serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
   .serv{background:#fff;border:1px solid #ebe5d3;border-radius:var(--radius);padding:44px 34px;position:relative;overflow:hidden;transition:transform .35s,box-shadow .35s}
-  .serv::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold-grad);transform:scaleX(0);transform-origin:left;transition:transform .45s}
+  .serv::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .45s}
   .serv:hover{transform:translateY(-6px);box-shadow:0 22px 50px rgba(63,66,36,.12)}
   .serv:hover::before{transform:scaleX(1)}
   .serv-num{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--gold);letter-spacing:.1em;margin-bottom:22px}
@@ -161,7 +160,7 @@
   .cta::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(236,212,138,.18),transparent 60%)}
   .cta .wrap{position:relative}
   .cta h2{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(2.4rem,5vw,3.8rem);line-height:1.1;margin-bottom:18px}
-  .cta h2 em{font-style:italic;background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .cta h2 em{font-style:italic;color:var(--gold-light)}
   .cta p{color:#ddd7c0;font-weight:300;font-size:1.08rem;margin-bottom:40px}
 
   /* Contato */
@@ -178,6 +177,8 @@
   .mapa-rodape{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;background:#fff;border:1px solid #ebe5d3;border-radius:0 0 var(--radius) var(--radius);padding:18px 24px}
   .mapa-rodape span{color:var(--muted);font-size:.92rem}
   .mapa-rodape .btn{padding:11px 22px;font-size:.76rem}
+  .mapa-rodape .btn-gold{background:var(--olive);color:#f3eedc}
+  .mapa-rodape .btn-gold:hover{background:var(--olive-deep)}
   @media (max-width:820px){.mapa{height:320px}.mapa-rodape{flex-direction:column;align-items:flex-start}}
 
   footer{background:var(--olive-deep);color:#bdb79e;padding:50px 0 34px;font-size:.85rem}
