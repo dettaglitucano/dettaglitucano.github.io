@@ -78,6 +78,8 @@
   .eyebrow::before{content:"";width:40px;height:1px;background:var(--gold-light)}
   .hero .eyebrow{color:var(--olive-dark);font-weight:600;letter-spacing:.22em;margin-bottom:34px}
   .hero .eyebrow::before{background:var(--olive-dark);width:44px}
+  .hero .eyebrow::before{flex:none}
+  .nowrap{white-space:nowrap}
   .hero h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(2.8rem,5.6vw,5rem);line-height:1;letter-spacing:-.01em;color:#1e1f15;margin-bottom:30px}
   .hero h1 em{font-style:italic;color:var(--olive)}
   .hero p{font-size:1.06rem;font-weight:400;max-width:440px;color:#3a3b2c;margin-bottom:42px}
@@ -237,7 +239,7 @@
     .hero-foto{position:relative;width:100%;height:min(52vh,460px);clip-path:polygon(0 0,100% 0,100% 84%,0 100%)}
     .hero-foto img{object-position:60% 45%}
     .hero-grid{margin-top:34px}
-    .hero .eyebrow{font-size:.66rem;letter-spacing:.16em;margin-bottom:24px}
+    .hero .eyebrow{font-size:.66rem;letter-spacing:.12em;margin-bottom:24px}
     .hero .eyebrow::before{width:28px}
     .serv-grid,.contato-grid{grid-template-columns:1fr}
     .proj-grid{grid-template-columns:1fr}
@@ -286,7 +288,7 @@
   </div>
   <div class="wrap hero-grid">
     <div class="hero-txt reveal">
-      <div class="eyebrow">Engenharia e Arquitetura · Tucano - BA</div>
+      <div class="eyebrow"><span>Engenharia e Arquitetura · <span class="nowrap">Tucano - BA</span></span></div>
       <h1>Projetos que unem técnica, estética e <em>funcionalidade.</em></h1>
       <p>Engenharia e Arquitetura em Tucano - BA, para transformar o seu espaço em um lugar único.</p>
       <div class="hero-ctas">
