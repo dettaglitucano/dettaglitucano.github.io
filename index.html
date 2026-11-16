@@ -93,8 +93,10 @@
   .serv:hover{transform:translateY(-6px);box-shadow:0 22px 50px rgba(63,66,36,.12)}
   .serv:hover::before{transform:scaleX(1)}
   .serv-num{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--gold);letter-spacing:.1em;margin-bottom:22px}
-  .serv-icon{width:62px;height:62px;border-radius:50%;background:var(--olive);display:grid;place-items:center;margin-bottom:24px}
-  .serv-icon svg{width:28px;height:28px;stroke:var(--gold-light)}
+  .serv-icon{width:84px;height:84px;border-radius:16px;background:#f4efe1;border:1px solid #e6dfca;display:grid;place-items:center;margin-bottom:26px;transition:background .35s,border-color .35s}
+  .serv-icon svg{width:46px;height:46px;stroke:var(--olive-dark);transition:stroke .35s}
+  .serv:hover .serv-icon{background:var(--olive);border-color:var(--olive)}
+  .serv:hover .serv-icon svg{stroke:var(--gold-light)}
   .serv h3{font-family:'Cormorant Garamond',serif;font-size:1.85rem;font-weight:600;color:var(--olive-deep);margin-bottom:12px}
   .serv p{color:var(--muted);font-size:.96rem}
 
@@ -274,19 +276,19 @@
     <div class="serv-grid">
       <article class="serv reveal">
         <div class="serv-num">01</div>
-        <div class="serv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/><path d="M9 11h.01M15 11h.01"/></svg></div>
+        <div class="serv-icon"><svg viewBox="0 0 48 48" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 5h36M6 3v4M42 3v4" stroke-width="1.2"/><path d="M6 11h36v31H6z"/><path d="M22 11v12M6 27h9M22 33v9M29 27h13"/><path d="M15 27a7 7 0 0 1 7-7" stroke-dasharray="2 2.4"/><path d="M29 27v-4" /><rect x="30" y="33" width="8" height="5" rx="1"/></svg></div>
         <h3>Projetos</h3>
         <p>Residenciais, comerciais e de interiores, do conceito à execução.</p>
       </article>
       <article class="serv reveal">
         <div class="serv-num">02</div>
-        <div class="serv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-5A8 8 0 1 1 21 12z"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5v.2M12 16.5h.01"/></svg></div>
+        <div class="serv-icon"><svg viewBox="0 0 48 48" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="9" r="3.2"/><path d="M24 5.8V2.5"/><path d="M22.4 11.8 12.5 41M25.6 11.8 35.5 41"/><path d="M12.5 41l-.8 3M35.5 41l.4 2.2"/><path d="M16.6 29.5Q24 33 31.4 29.5"/><path d="M8 44.5q16 -5 32 0" stroke-dasharray="2 2.6" stroke-width="1.2"/></svg></div>
         <h3>Consultorias</h3>
         <p>Orientação técnica para você tomar a melhor decisão para a sua obra.</p>
       </article>
       <article class="serv reveal">
         <div class="serv-num">03</div>
-        <div class="serv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div>
+        <div class="serv-icon"><svg viewBox="0 0 48 48" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 33c0-10 6.7-17.5 15-17.5S39 23 39 33"/><path d="M4 33h40v4.5a1.5 1.5 0 0 1-1.5 1.5h-37A1.5 1.5 0 0 1 4 37.5z"/><path d="M20.5 15.9V12a1.5 1.5 0 0 1 1.5-1.5h4a1.5 1.5 0 0 1 1.5 1.5v3.9"/><path d="M20.5 16v17M27.5 16v17" stroke-width="1.2"/><path d="M13 24.5q-1.4 3.5-1.6 8.5M35 24.5q1.4 3.5 1.6 8.5" stroke-width="1.2"/></svg></div>
         <h3>Assessoria</h3>
         <p>Acompanhamento completo, com segurança e transparência em cada etapa.</p>
       </article>
